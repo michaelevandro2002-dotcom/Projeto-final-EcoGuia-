@@ -4,260 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>EcoGuia | Recicle e preserve</title>
-
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="EcoGuia: aprenda sobre reciclagem, descarte correto e sustentabilidade.">
+    <title>EcoGuia | Descarte consciente, futuro sustentável</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <span>♻</span> EcoGuia
-            </a>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+            <span class="logo-icone">♻</span>
+            <span>Eco<span class="logo-destaque">Guia</span></span>
+        </a>
 
-            <ul class="menu">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#residuos">Reciclagem</a></li>
-                <li><a href="#dicas">Dicas</a></li>
-            </ul>
-
-            <a href="#residuos" class="botao-menu">
-                Começar
-            </a>
+        <nav class="menu">
+            <a href="index.html" class="ativo">Início</a>
+            <a href="reciclagem.html">Reciclagem</a>
+            <a href="descarte.html">Descarte</a>
+            <a href="impactos.html">Impactos ambientais</a>
+            <a href="reutilizacao.html">Reutilização</a>
+            <a href="pontos-coleta.html">Pontos de coleta</a>
+            <a href="curiosidades.html">Curiosidades</a>
         </nav>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- INÍCIO -->
-        <section class="hero" id="inicio">
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner" id="inicio">
+            <div class="banner-conteudo">
+                <span class="etiqueta">PEQUENAS ATITUDES, GRANDES MUDANÇAS</span>
 
-            <div class="hero-texto">
-                <span class="subtitulo">
-                    🌱 Pequenas atitudes, grandes mudanças
-                </span>
-
-                <h1>
-                    Um futuro mais verde
-                    começa com <span>você.</span>
-                </h1>
+                <h1>O futuro do planeta começa com as suas <span>escolhas.</span></h1>
 
                 <p>
-                    Aprenda a separar seus resíduos, descubra como
-                    reciclar corretamente e faça parte da mudança
-                    por um planeta mais sustentável.
+                    Aprenda a separar resíduos, descobrir formas de reciclar
+                    e adotar hábitos mais sustentáveis no seu dia a dia.
                 </p>
 
-                <a href="#residuos" class="botao-principal">
-                    Aprender a reciclar →
+                <div class="banner-botoes">
+                    <a href="reciclagem.html" class="botao botao-principal">
+                        Aprenda a reciclar
+                    </a>
+
+                    <a href="#sobre" class="botao botao-secundario">
+                        Conheça o projeto
+                    </a>
+                </div>
+            </div>
+     
+</div>
+                <div class="circulo-verde">
+                    <span>🌱</span>
+                </div>
+
+                <div class="mensagem-flutuante">
+                    <strong>Faça a diferença!</strong>
+                    <p>Comece com uma atitude sustentável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE O PROJETO -->
+        <section class="secao sobre" id="sobre">
+            <div class="sobre-texto">
+                <span class="subtitulo">SOBRE O ECOGUIA</span>
+                <h2>Conhecimento que transforma atitudes</h2>
+
+                <p>
+                    O EcoGuia é um projeto criado para ajudar as pessoas
+                    a compreenderem a importância da reciclagem e do
+                    descarte correto de resíduos.
+                </p>
+
+                <p>
+                    Nosso objetivo é compartilhar informações simples e
+                    úteis para incentivar hábitos sustentáveis e contribuir
+                    para a preservação do meio ambiente.
+                </p>
+
+                <a href="reciclagem.html" class="link-verde">
+                    Descubra como reciclar →
                 </a>
             </div>
 
-            <div class="hero-imagem">
-                <img
-                    src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900"
-                    alt="Pessoa segurando um símbolo de reciclagem"
-                >
-            </div>
-
-        </section>
-
-        <!-- SOBRE -->
-        <section class="sobre" id="sobre">
-
-            <div class="titulo-secao">
-                <span>CONHEÇA O PROJETO</span>
-                <h2>O que é o EcoGuia?</h2>
-            </div>
-
-            <p>
-                O EcoGuia é uma plataforma educativa criada para
-                ajudar as pessoas a entender a importância da
-                reciclagem e do descarte correto de resíduos.
-
-                Nosso objetivo é facilitar o acesso à informação
-                e incentivar hábitos mais sustentáveis no cotidiano.
-            </p>
-
-        </section>
-
-        <!-- CATEGORIAS -->
-        <section class="residuos" id="residuos">
-
-            <div class="titulo-secao">
-                <span>GUIA DE RECICLAGEM</span>
-                <h2>Aprenda a separar seus resíduos</h2>
+            <div class="sobre-destaque">
+                <span class="sobre-icone">🌎</span>
+                <h3>Um planeta melhor depende de todos nós.</h3>
                 <p>
-                    Conheça os principais tipos de materiais
-                    e saiba como descartá-los.
+                    A educação ambiental é um dos primeiros passos
+                    para construir um futuro mais sustentável.
+                </p>
+            </div>
+        </section>
+
+        <!-- CATEGORIAS DE RESÍDUOS -->
+        <section class="secao categorias" id="categorias">
+            <div class="titulo-secao">
+                <span class="subtitulo">GUIA DE RECICLAGEM</span>
+                <h2>Conheça os tipos de resíduos</h2>
+                <p>
+                    Cada material precisa de um destino adequado.
+                    Conheça algumas das principais categorias.
                 </p>
             </div>
 
-            <!-- PESQUISA -->
-            <div class="pesquisa">
-                <input
-                    type="text"
-                    id="pesquisa"
-                    placeholder="Pesquisar material..."
-                >
-                <button type="button" onclick="pesquisarMaterial()">
-                    Pesquisar
-                </button>
-            </div>
+            <div class="grade-cards">
 
-            <!-- FILTROS -->
-            <div class="filtros">
-                <button class="filtro ativo" data-categoria="todos">
-                    Todos
-                </button>
-
-                <button class="filtro" data-categoria="papel">
-                    Papel
-                </button>
-
-                <button class="filtro" data-categoria="plastico">
-                    Plástico
-                </button>
-
-                <button class="filtro" data-categoria="vidro">
-                    Vidro
-                </button>
-
-                <button class="filtro" data-categoria="metal">
-                    Metal
-                </button>
-
-                <button class="filtro" data-categoria="especial">
-                    Especiais
-                </button>
-            </div>
-
-            <!-- CARDS -->
-            <div class="cards">
-
-                <article class="card" data-categoria="papel">
-                    <div class="card-icone">📄</div>
-                    <h3>Papel</h3>
+                <article class="card-residuo">
+                    <div class="card-icone papel">📄</div>
+                    <h3>Papel e papelão</h3>
                     <p>
-                        Jornais, revistas, folhas e caixas de papelão.
+                        Jornais, revistas, caixas de papelão e folhas
+                        podem ser encaminhados para a reciclagem.
                     </p>
-                    <span class="destino">Coleta seletiva: azul</span>
+                    <a href="reciclagem.html">Saiba mais →</a>
                 </article>
 
-                <article class="card" data-categoria="plastico">
-                    <div class="card-icone">🧴</div>
+                <article class="card-residuo">
+                    <div class="card-icone plastico">🧴</div>
                     <h3>Plástico</h3>
                     <p>
-                        Garrafas PET, embalagens e recipientes plásticos.
+                        Garrafas PET, embalagens e potes plásticos
+                        podem ser reciclados quando corretamente separados.
                     </p>
-                    <span class="destino">Coleta seletiva: vermelho</span>
+                    <a href="reciclagem.html">Saiba mais →</a>
                 </article>
 
-                <article class="card" data-categoria="vidro">
-                    <div class="card-icone">🍾</div>
+                <article class="card-residuo">
+                    <div class="card-icone vidro">🍾</div>
                     <h3>Vidro</h3>
                     <p>
-                        Garrafas, potes e embalagens de vidro.
+                        Garrafas e potes de vidro podem ser reciclados.
+                        O descarte deve ser feito com cuidado.
                     </p>
-                    <span class="destino">Coleta seletiva: verde</span>
+                    <a href="reciclagem.html">Saiba mais →</a>
                 </article>
 
-                <article class="card" data-categoria="metal">
-                    <div class="card-icone">🥫</div>
+                <article class="card-residuo">
+                    <div class="card-icone metal">🥫</div>
                     <h3>Metal</h3>
                     <p>
-                        Latas de alumínio, aço e embalagens metálicas.
+                        Latas de alumínio e embalagens metálicas
+                        podem retornar ao processo de fabricação.
                     </p>
-                    <span class="destino">Coleta seletiva: amarelo</span>
+                    <a href="reciclagem.html">Saiba mais →</a>
                 </article>
 
-                <article class="card" data-categoria="especial">
-                    <div class="card-icone">🔋</div>
-                    <h3>Pilhas e baterias</h3>
+                <article class="card-residuo">
+                    <div class="card-icone organico">🍂</div>
+                    <h3>Resíduos orgânicos</h3>
                     <p>
-                        Devem ser entregues em pontos de coleta específicos.
+                        Restos de frutas, verduras e outros resíduos
+                        orgânicos podem ser aproveitados na compostagem.
                     </p>
-                    <span class="destino">Descarte especial</span>
+                    <a href="descarte.html">Saiba mais →</a>
                 </article>
 
-                <article class="card" data-categoria="especial">
-                    <div class="card-icone">💻</div>
-                    <h3>Eletrônicos</h3>
+                <article class="card-residuo">
+                    <div class="card-icone eletronico">🔋</div>
+                    <h3>Resíduos especiais</h3>
                     <p>
-                        Celulares, computadores e aparelhos sem uso.
+                        Pilhas, baterias e eletrônicos precisam de
+                        pontos de recebimento específicos.
                     </p>
-                    <span class="destino">Descarte especial</span>
+                    <a href="descarte.html">Saiba mais →</a>
                 </article>
 
             </div>
+        </section>
 
-            <p id="mensagem-vazia" class="mensagem-vazia">
-                Nenhum material encontrado.
-            </p>
+        <!-- DESCARTE CONSCIENTE -->
+        <section class="faixa-descarte">
+            <div>
+                <span class="subtitulo">DESCARTE CONSCIENTE</span>
+                <h2>Você sabe para onde vai o seu lixo?</h2>
+                <p>
+                    O descarte incorreto pode contaminar o solo, a água
+                    e prejudicar os animais. Aprenda a dar o destino
+                    correto para cada resíduo.
+                </p>
+            </div>
 
+            <a href="descarte.html" class="botao botao-branco">
+                Aprender sobre descarte →
+            </a>
         </section>
 
         <!-- DICAS -->
-        <section class="dicas" id="dicas">
-
+        <section class="secao dicas" id="dicas">
             <div class="titulo-secao">
-                <span>FAÇA SUA PARTE</span>
-                <h2>Pequenas atitudes fazem diferença</h2>
+                <span class="subtitulo">COMECE HOJE</span>
+                <h2>Atitudes sustentáveis para o dia a dia</h2>
+                <p>
+                    Pequenas mudanças na rotina podem contribuir
+                    para um ambiente mais limpo e saudável.
+                </p>
             </div>
 
-            <div class="dicas-grid">
+            <div class="grade-dicas">
+
+                <article class="dica">
+                    <span>♻️</span>
+                    <h3>Separe os resíduos</h3>
+                    <p>Organize o lixo reciclável e o rejeito separadamente.</p>
+                </article>
 
                 <article class="dica">
                     <span>💧</span>
                     <h3>Economize água</h3>
-                    <p>
-                        Evite desperdícios e utilize a água
-                        de maneira consciente.
-                    </p>
+                    <p>Evite desperdícios durante atividades do cotidiano.</p>
                 </article>
 
                 <article class="dica">
                     <span>🌳</span>
                     <h3>Preserve a natureza</h3>
-                    <p>
-                        Cuide das áreas verdes e evite jogar
-                        lixo em locais inadequados.
-                    </p>
+                    <p>Não descarte lixo em ruas, rios, praias ou terrenos.</p>
                 </article>
 
                 <article class="dica">
-                    <span>♻️</span>
+                    <span>🛍️</span>
                     <h3>Reutilize materiais</h3>
-                    <p>
-                        Dê novos usos aos objetos antes
-                        de descartá-los.
-                    </p>
+                    <p>Dê novas utilidades aos objetos antes de descartá-los.</p>
                 </article>
 
             </div>
+        </section>
 
+        <!-- CHAMADA FINAL -->
+        <section class="chamada-final">
+            <span>🌱</span>
+            <h2>O planeta precisa da sua participação!</h2>
+            <p>
+                Informe-se, compartilhe conhecimento e faça parte
+                de uma mudança positiva.
+            </p>
+            <a href="curiosidades.html" class="botao botao-principal">
+                Explore o EcoGuia
+            </a>
         </section>
 
     </main>
 
     <!-- RODAPÉ -->
-    <footer>
-        <h2>♻ EcoGuia</h2>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
 
-        <p>
-            Um pequeno passo para você.
-            Um grande passo para o planeta.
-        </p>
+            <div>
+                <a href="index.html" class="logo logo-rodape">
+                    <span class="logo-icone">♻</span>
+                    <span>Eco<span class="logo-destaque">Guia</span></span>
+                </a>
+                <p>
+                    Informação e conscientização para um futuro sustentável.
+                </p>
+            </div>
 
-        <span>Projeto acadêmico de Front-End | 2026</span>
+            <div class="rodape-links">
+                <h3>Navegação</h3>
+                <a href="index.html">Início</a>
+                <a href="reciclagem.html">Reciclagem</a>
+                <a href="descarte.html">Descarte</a>
+                <a href="pontos-coleta.html">Pontos de coleta</a>
+            </div>
+
+            <div class="rodape-links">
+                <h3>Projeto</h3>
+                <a href="impactos.html">Impactos ambientais</a>
+                <a href="reutilizacao.html">Reutilização</a>
+                <a href="curiosidades.html">Curiosidades</a>
+            </div>
+
+        </div>
+
+        <div class="rodape-final">
+            <p>© 2026 EcoGuia — Projeto acadêmico de educação ambiental.</p>
+        </div>
     </footer>
-
 
 </body>
 </html>

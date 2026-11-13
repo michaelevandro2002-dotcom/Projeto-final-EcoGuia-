@@ -426,3 +426,204 @@ footer span {
     }
 
 }
+
+/* PÁGINAS INTERNAS */
+.pagina-banner {
+    padding: 85px 8%;
+    text-align: center;
+    background: linear-gradient(120deg, #e8f5e9, #f6fbf4);
+}
+
+.pagina-banner h1 {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    color: var(--verde-escuro);
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+}
+
+.pagina-banner p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+.fundo-claro {
+    background-color: #f0f6f0;
+}
+
+/* CONTEÚDO EM DUAS COLUNAS */
+.conteudo-duplo {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.conteudo-duplo p {
+    color: var(--cinza);
+    margin-bottom: 18px;
+}
+
+.caixa-verde {
+    padding: 35px;
+    background-color: var(--verde-escuro);
+    color: white;
+    border-radius: 15px;
+}
+
+.caixa-verde h2,
+.caixa-verde h3 {
+    margin: 12px 0;
+}
+
+.caixa-verde p {
+    color: #d5e7da;
+}
+
+.icone-grande {
+    font-size: 50px;
+}
+
+/* CORES DAS LIXEIRAS */
+.cor-lixeira {
+    width: 48px;
+    height: 58px;
+    margin-bottom: 18px;
+    border-radius: 7px 7px 12px 12px;
+    position: relative;
+}
+
+.cor-lixeira::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -4px;
+    width: 56px;
+    height: 7px;
+    border-radius: 5px;
+    background: #444;
+}
+
+.azul {
+    background: #1671c5;
+}
+
+.vermelho {
+    background: #e33e3e;
+}
+
+.verde {
+    background: #24934e;
+}
+
+.amarelo {
+    background: #e9b927;
+}
+
+.marrom {
+    background: #8a5a35;
+}
+
+.cinza {
+    background: #777777;
+}
+
+.observacao {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+/* LISTA DE ETAPAS */
+.lista-etapas {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.lista-etapas article {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #e5ece5;
+    border-radius: 12px;
+}
+
+.lista-etapas article > span {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--verde-claro);
+    color: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.lista-etapas h3 {
+    color: var(--verde-escuro);
+    margin-bottom: 5px;
+}
+
+.lista-etapas p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+/* PERGUNTAS FREQUENTES */
+.perguntas {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.perguntas details {
+    padding: 20px 23px;
+    background-color: white;
+    border: 1px solid #e2eae2;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.perguntas details[open] {
+    border-color: var(--verde);
+}
+
+.perguntas summary {
+    color: var(--verde-escuro);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.perguntas details p {
+    color: var(--cinza);
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* RESPONSIVIDADE DAS PÁGINAS INTERNAS */
+@media (max-width: 700px) {
+    .pagina-banner {
+        padding: 65px 6%;
+    }
+
+    .conteudo-duplo {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .lista-etapas article {
+        gap: 13px;
+        padding: 17px;
+    }
+}
